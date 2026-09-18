@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>ARGUS · Investigation Console</title></head>
+  <body>
+    <div id="root">
+      <!-- This fallback is intentionally visible when index.html is opened as file://.
+           The full React investigation console replaces it when served by Vite. -->
+      <div class="file-fallback">
+        <div class="radar"></div>
+        <div class="fallback-card">
+          <div class="fallback-kicker">ARGUS // CASE FILE SYSTEM</div>
+          <h1>THE ROOM 302 <span>CASE</span></h1>
+          <p class="fallback-lead">Your investigation console is ready. Start the local server to enter the interactive detective interface.</p>
+          <div class="fallback-status"><i></i> CASE ENGINE OFFLINE · LOCAL SERVER REQUIRED</div>
+          <code>cd ARGUS && ./start.sh</code>
+          <p class="fallback-note">Then open <b>http://localhost:5173</b> in the browser. Opening this HTML file directly cannot load the React modules or API.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      if (location.protocol !== 'file:') document.documentElement.classList.add('server-mode');
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+    <style>
+      *{box-sizing:border-box}body{margin:0;background:#080b0d;color:#e8edf0;font-family:Arial,sans-serif}.file-fallback{min-height:100vh;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,#1d3036 0,transparent 25%),linear-gradient(145deg,#080b0d,#10191d)}.file-fallback:before{content:"";position:absolute;inset:0;opacity:.13;background-image:linear-gradient(#8faeb733 1px,transparent 1px),linear-gradient(90deg,#8faeb733 1px,transparent 1px);background-size:42px 42px;transform:perspective(500px) rotateX(55deg) scale(1.7);transform-origin:center bottom}.fallback-card{position:relative;width:min(620px,calc(100% - 32px));padding:42px;border:1px solid #37535b;background:rgba(9,15,18,.92);box-shadow:0 30px 90px #0009;border-radius:12px}.fallback-kicker{font:11px monospace;letter-spacing:.18em;color:#d27659}.fallback-card h1{font:700 clamp(30px,7vw,58px) Arial;margin:18px 0 12px;letter-spacing:.08em}.fallback-card h1 span{color:#80b5b0;font-weight:400}.fallback-lead{color:#afc0c4;font-size:17px;line-height:1.6}.fallback-status{margin:26px 0 18px;font:11px monospace;color:#81c2ad;letter-spacing:.06em}.fallback-status i{display:inline-block;width:8px;height:8px;background:#81c2ad;border-radius:50%;margin-right:8px;box-shadow:0 0 13px #81c2ad}.fallback-card code{display:block;padding:15px;background:#050809;border:1px solid #263b40;border-radius:6px;color:#f1b38d;font:14px monospace}.fallback-note{font-size:12px;line-height:1.6;color:#70868c;margin:17px 0 0}.fallback-note b{color:#b9d8d6}.server-mode .file-fallback{display:none}
+    </style>
+  </body>
+</html>
