@@ -8,6 +8,12 @@ Open the deployed detective console: **https://argus-orcin-alpha.vercel.app/**
 
 Vercel project: **https://vercel.com/khush-415b/argus**
 
+### Main detective console
+
+![ARGUS detective console](frontend/public/argus-main-screen-crop.png)
+
+The interface uses a noir palette, evidence-board layout, suspect interviews, tool-driven investigation, and a browser-generated ambient soundtrack for a Sherlock-inspired mood.
+
 ## Run locally
 
 Important: do not double-click `frontend/index.html`. That opens it as `file://` and browsers cannot load the React module imports or connect to the API. From the ARGUS folder, run:
