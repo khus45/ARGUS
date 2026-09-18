@@ -2,6 +2,12 @@
 
 ARGUS is a playable AI detective-game MVP. A case is generated when a game starts, NPCs answer from their own memories, investigation tools reveal evidence, and the final accusation is scored against the hidden solution.
 
+## Live demo
+
+Open the deployed detective console: **https://argus-orcin-alpha.vercel.app/**
+
+Vercel project: **https://vercel.com/khush-415b/argus**
+
 ## Run locally
 
 Important: do not double-click `frontend/index.html`. That opens it as `file://` and browsers cannot load the React module imports or connect to the API. From the ARGUS folder, run:
